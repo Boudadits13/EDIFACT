@@ -32,7 +32,39 @@ pip install flask
 pip install psycopg2
 Set up a PostgreSQL database and import your data using a tool like pgAdmin.```
 `
-`##Usage`
-
+## Usage
 1.Run the Flask application.
-python app.py
+`python app.py`
+2.Open a web browser and access http://localhost:5000/ to view a list of all orders.
+
+3.Click on a specific order to view its details.
+
+To generate an EDIFACT message for an order, use the following URL format: `http://localhost:5000/{order_id}`. For example, `http://localhost:5000/1` generates the EDIFACT message for order 1.
+## Configuration
+You can customize the application's configuration by modifying the appropriate settings in the `app.py` file.
+Ensure that you configure the database connection and other parameters to match your environment.
+
+## Database Setup
+To set up the database:
+
+1.Create a PostgreSQL database.
+
+2.Import your data from an SQL file using a tool like pgAdmin.
+
+3.Configure the application to connect to your database by updating the db_config dictionary in main.py
+
+## Routes and Endpoints
+1.`/:` Displays a list of all orders and their relevant attributes.
+2.`/bdd/{order_id}:` Displays detailed information about a specific order, including order number, date, time, quantity, and total.
+3.`/{order_id}:` Generates an EDIFACT message for the specified order.
+
+## Generating EDIFACT Messages
+1.To generate an EDIFACT message for an order, access the URL `http://localhost:5000/{order_id}`.
+2.For example, `http://localhost:5000/1` generates the EDIFACT message for order 1.
+
+## Contributing
+Contributions to this project are welcome. To contribute:
+
+Fork the repository.
+Create a new branch for your feature or bug fix.
+Make your changes and submit a pull request.
