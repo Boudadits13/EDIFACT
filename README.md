@@ -49,7 +49,7 @@ To set up the database:
 
 -Create a PostgreSQL database.
 
--Import your data from an SQL file using a tool like pgAdmin.
+-Import your data from an SQL file `SQL_PG`using a tool like pgAdmin.
 
 -Configure the application to connect to your database by updating the db_config dictionary in main.py
 
