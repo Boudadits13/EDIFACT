@@ -26,17 +26,13 @@ Before using this application, ensure you have the following requirements in pla
 
 1. Clone the repository to your local machine.
 
-```bash
+`
 Install the required Python packages.
-bash
-Copy code
-pip install -r requirements.txt
-Set up a PostgreSQL database and import your data using a tool like pgAdmin.
+pip install flask
+pip install psycopg2
+Set up a PostgreSQL database and import your data using a tool like pgAdmin.```
+`
+`##Usage`
 
-Update the database configuration in the Flask application to match your PostgreSQL setup.
-
-Usage
-Run the Flask application.
-bash
-Copy code
-python main.py
+1.Run the Flask application.
+python app.py
