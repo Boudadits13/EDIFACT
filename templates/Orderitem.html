@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        table {x²
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data from the Database</h1>
+      <table>
+        <tr>
+            <th>Id</th>
+            <th>Order Id </th>
+            <th>roduct Id</th>
+            <th>Unit Price </th>
+            <th>Quantity</th>
+        </tr>
+        {% for item in data %}
+            <tr>
+                <td>{{ item[0] }}</td>  
+                <td>{{ item[1] }}</td>  
+                <td>{{ item[2] }}</td>  
+                <td>{{ item[3] }}</td>  
+                <td>{{ item[4] }}</td>  
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+</body>
+</html></title>
+</head>
+<body>
+
+</body>
+</html>
